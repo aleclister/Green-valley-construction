@@ -74,7 +74,7 @@
 	  }
 	
 	:root {
-		--primary: #0e817c;
+		--primary: #FFB599;
 		--darkPrimary: #13726d;
 		--tint: #0e524e;
 		--shade: #49b5b0;
@@ -139,10 +139,11 @@
         text-align: center;
         text-decoration: none;
         background: var(--primary);
-        line-height: 53/20;
-        width: 162/18em;
-        border-radius: 3/18em;
-        font-size: 18/20em;
+		padding: 0 16/20em;
+        line-height: 49/20;
+        width: 162/20em;
+        border-radius: 5/20em;
+        font-size: 20/20em;
         font-family: "Roboto", sans-serif;
         -webkit-transition: .2s ease;
         -o-transition: .2s ease;
@@ -170,6 +171,7 @@
         &:hover {
             &:before {
                 width: 100%;
+				
             }
         }
     }
@@ -665,7 +667,6 @@
 
                 &:hover {
                     a.link {
-                        color: #fff;
                         &:before {
                             width: 100%;
                             opacity: 1;
@@ -695,20 +696,27 @@
                 content: '';
                 background: var(--primary);
                 height: 3/20em;
-                width: 100%;
+                width: 0;
                 position: absolute;
                 left: 0;
 				bottom: -0/18em;
                 z-index: -1;
                 opacity: 1;
-                transition: opacity .3s, transform .3s;
+                transition: width .3s;
             }
         }
+
+		a.button-solid {
+			color: #FFFFFF;
+			line-height: 49/20em;
+			height: 49/20em;
+			padding: 0 16/20em;
+			font-weight: 400;
+		}
 
         a#active-menu {
             position: relative;
             border: none;
-			color: #000;
     
             &:before {
                 cursor: pointer;
