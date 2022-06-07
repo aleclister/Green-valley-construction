@@ -13,10 +13,10 @@ main {
     #hero {
         font-size: inherit;
         padding-bottom: 270/20em;
-        padding-top: 100/20em;
+        padding-top: 150/20em;
         position: relative;
         z-index: 1;
-        background: url("/images/landing-mobile.jpg");
+        background: url("/images/home1-mobile.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -27,8 +27,8 @@ main {
             display: block;
             height: 100%;
             width: 100%;
-            background: #ECEFFE;
-            opacity: .9;
+            background: #000;
+            opacity: .6;
             top: 0;
             left: 0;
             z-index: -10;
@@ -48,34 +48,53 @@ main {
 
         .heroText {
             width: 100%;
-            max-width: 578/20em;
+            margin: auto;
+            max-width: 910/20em;
         }
 
         h1 {
             font-weight: bold;
-            font-size: 56/20em;
-            color: #000000;
-            line-height: 66/56;
-            margin-bottom: 23/56em;
+            font-size: ~"min(10vw, 3.2em)";
+            color: #fff;
+            text-align: center;
+            line-height: 77/64;
+            margin-bottom: 92/64em;
+            margin-right: auto;
+            width: 100%;
+            max-width: 910/64em;
+            position: relative;
+        
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 4/64em;
+                width: 97/64em;
+                background: #eebe76;
+                opacity: 1;
+                bottom: -16/64em;
+                left: 50%;
+                transform: translatex(-50%);
+            }
         }
 
         p {
-            font-size: 18/20em;
-            line-height: 27/18;
-            margin-bottom: 24/18em;
-            color: #595959;
+            font-size: 20/20em;
+            line-height: 27/20;
+            margin: auto;
+            margin-bottom: 50/20em;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            max-width: 617/20em;
         }
 
-        .buttons {
-            display: flex;
-            justify-content: flex-start;
-        }
+        
 
         .button-solid {
-            margin: 0;
-            margin-right: 52/18em;
-            height: 53/18em;
-            padding-top: 3/18em;
+            margin: auto;
+            display: block;
+            width: 200/20em;
         }
 
         .call-now {
@@ -131,7 +150,7 @@ main {
         padding: 123/20em 0 229/20em 0;
         z-index: 1;
         overflow: hidden;
-        background: url("/images/landing.jpg");
+        background: url("/images/home1.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -156,8 +175,8 @@ main {
 @media only screen and (min-width: 64em) {
 
     #hero {
-        padding-top: 300/20em;
-        padding-bottom: 280/20em;
+        padding-top: 230/20em;
+        padding-bottom: 307/20em;
         background-attachment: fixed;
 
         .business-casual {
@@ -179,12 +198,54 @@ main {
 @media only screen and (min-width: 0em) {
 
     #services {
-        padding-top: 0;
-        margin-top: -120/20em;
-        display: flex;
-        flex-direction: column-reverse;
-        z-index: 100;
+        border-radius: 5/20em;
+        margin: auto;
+        margin-top: -200/20em;
         position: relative;
+        z-index: 100;
+        background: #fff;
+        width: 90%;
+        max-width: 1320/20em;
+        padding: 20/20em;
+        border-top: 6/20em solid var(--primary);
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+        .card {
+            display: block;
+            max-width: 100%;
+            margin: auto;
+            margin-bottom: 50/20em;
+
+            picture {
+                background: var(--primary);
+                width: 120/20em;
+                height: 120/20em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                margin-bottom: 23/20em;
+                border-radius: 50%;
+            }
+            h2 {
+                text-align: center;  
+                font-size: 20/20em;
+                line-height: 27/20em;
+                font-weight: 400;
+                color: #666; 
+                margin-bottom: 13/20em;
+            }
+
+            p {
+                text-align: center;
+                color: #999999;
+                font-size: 18/20em;
+                line-height: 24/18em;
+
+            }
+           
+
+        }
+
         .service {
             background: #0e817c;
             padding: 42/20em;

@@ -9,10 +9,10 @@ main {
   #hero {
     font-size: inherit;
     padding-bottom: 13.5em;
-    padding-top: 5em;
+    padding-top: 7.5em;
     position: relative;
     z-index: 1;
-    background: url("/images/landing-mobile.jpg");
+    background: url("/images/home1-mobile.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,8 +23,8 @@ main {
     display: block;
     height: 100%;
     width: 100%;
-    background: #ECEFFE;
-    opacity: .9;
+    background: #000;
+    opacity: .6;
     top: 0;
     left: 0;
     z-index: -10;
@@ -41,34 +41,48 @@ main {
   }
   #hero .heroText {
     width: 100%;
-    max-width: 28.9em;
+    margin: auto;
+    max-width: 45.5em;
   }
   #hero h1 {
     font-weight: bold;
-    font-size: 2.8em;
-    color: #000000;
-    line-height: 1.17857143;
-    margin-bottom: 0.41071429em;
+    font-size: min(10vw, 3.2em);
+    color: #fff;
+    text-align: center;
+    line-height: 1.203125;
+    margin-bottom: 1.4375em;
+    margin-right: auto;
+    width: 100%;
+    max-width: 14.21875em;
+    position: relative;
+  }
+  #hero h1:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.0625em;
+    width: 1.515625em;
+    background: #eebe76;
+    opacity: 1;
+    bottom: -0.25em;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+            transform: translatex(-50%);
   }
   #hero p {
-    font-size: 0.9em;
-    line-height: 1.5;
-    margin-bottom: 1.33333333em;
-    color: #595959;
-  }
-  #hero .buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    font-size: 1em;
+    line-height: 1.35;
+    margin: auto;
+    margin-bottom: 2.5em;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    max-width: 30.85em;
   }
   #hero .button-solid {
-    margin: 0;
-    margin-right: 2.88888889em;
-    height: 2.94444444em;
-    padding-top: 0.16666667em;
+    margin: auto;
+    display: block;
+    width: 10em;
   }
   #hero .call-now {
     height: 2.94444444em;
@@ -119,7 +133,7 @@ main {
     padding: 6.15em 0 11.45em 0;
     z-index: 1;
     overflow: hidden;
-    background: url("/images/landing.jpg");
+    background: url("/images/home1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,8 +158,8 @@ main {
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #hero {
-    padding-top: 15em;
-    padding-bottom: 14em;
+    padding-top: 11.5em;
+    padding-bottom: 15.35em;
     background-attachment: fixed;
   }
   #hero .business-casual {
@@ -159,17 +173,55 @@ main {
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #services {
-    padding-top: 0;
-    margin-top: -6em;
+    border-radius: 0.25em;
+    margin: auto;
+    margin-top: -10em;
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    width: 90%;
+    max-width: 66em;
+    padding: 1em;
+    border-top: 0.3em solid var(--primary);
+    -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+  }
+  #services .card {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 2.5em;
+  }
+  #services .card picture {
+    background: var(--primary);
+    width: 6em;
+    height: 6em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    z-index: 100;
-    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    margin-bottom: 1.15em;
+    border-radius: 50%;
+  }
+  #services .card h2 {
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.35em;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 0.65em;
+  }
+  #services .card p {
+    text-align: center;
+    color: #999999;
+    font-size: 0.9em;
+    line-height: 1.33333333em;
   }
   #services .service {
     background: #0e817c;
