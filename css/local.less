@@ -206,14 +206,18 @@ main {
         background: #fff;
         width: 90%;
         max-width: 1320/20em;
-        padding: 20/20em;
+        padding: 50/20em 20/20em;
         border-top: 6/20em solid var(--primary);
         box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
         .card {
             display: block;
-            max-width: 100%;
+            width: 100%;
+            max-width: 357/20em;
             margin: auto;
             margin-bottom: 50/20em;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
 
             picture {
                 background: var(--primary);
@@ -311,8 +315,9 @@ main {
     }
 }
 
+
 /* Large Phone */
-@media only screen and (min-width: 600px) and (max-width: 790px) {
+@media only screen and (min-width: 600px) and (max-width: 666px) {
 
     #services {
         flex-direction: row;
@@ -348,55 +353,32 @@ main {
     }
 }
 
-/* Tablet */
-@media only screen and (min-width: 791px) {
+/* Inbetween */
+@media only screen and (min-width: 666px) {
 
     #services {
-        flex-direction: row;
-        align-items: flex-end;
-        width: 96%;
-        max-width: 1144/20em;
-        margin: auto;
-        margin-top: -130/20em;
-        position: relative;
-        z-index: 100;
-        padding: 0;
+        font-size: ~"min(1.7vw, 1em)";
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 98%;
 
-        .service {
+        .card {
             margin: 0;
-            width: 372/20em;
-            height: auto;
-            border-radius: 5/20em 5/20em 0 0;
-
-            &:nth-of-type(2) {
-                order: initial;
-                width: 400/20em;
-                height: 345/20em;
-                border: none;
-            }
-
-            &:last-of-type {
-                border-radius: 5/20em 5/20em 0 0;
-            }
         }
+        
     }
 }
 
-/* Small Desktop */
-@media only screen and (min-width: 64em) {
-
-    #services {
-        .service {
-            &:nth-of-type(2) {
-                box-shadow: none;
-            }
-        }
-    }
-}
 
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-
+    #services {
+        padding: 50/20em 80/20em;
+        .card {
+            max-width: 357/20em;
+        }
+    }
 }
 
 /*-- -------------------------- -->
