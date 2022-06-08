@@ -381,6 +381,194 @@ main {
     }
 }
 
+
+
+/*-- -------------------------- -->
+<---       Content Template     -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    .sidebyside {
+        width: 100%;
+        max-width: 611/20em;
+        margin: auto;
+        padding-top: 25vw;
+        padding-left: 10/20em;
+        padding-right: 10/20em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .left {
+            order: 2;
+            text-align: center;
+            max-width: 611/20em;
+
+            img {
+                display: none;
+            }
+            
+            .title {
+                font-weight: 700;
+                font-size: ~"min(12vw, 2.4em)";
+                line-height: 58/48em;
+                color: #1a1a1a;
+                position: relative;
+                margin-bottom: 92/48em;
+                text-align: center;
+    
+                &:before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    height: 4/64em;
+                    width: 97/64em;
+                    background: #eebe76;
+                    opacity: 1;
+                    bottom: -25/64em;
+                    left: 50%;
+                    transform: translatex(-50%);
+                    font-size: 1.6em;
+                }
+            }
+    
+            p {
+                margin-bottom: 25/18em;
+                text-align: center;
+                &:last-of-type {
+                    margin-bottom: 62/18em;
+                }
+            }
+
+            a {
+                margin: auto;
+            }
+        }
+
+        
+
+        .right {
+            display: block;
+            width: 611/20em;
+            height: 861/20em;
+            position: relative;
+            font-size: ~"min(1.6vw, .6em)";
+            margin: auto;
+            order: 1;
+            margin-bottom: 300/20em;
+
+
+            // Overlay
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 1000/20em;
+                background: var(--primary);
+                opacity: 1;
+                top: -107/20em;
+                bottom: -119/20em;
+                left: 352/20em;
+            }
+
+            // Object Fit
+            img { 
+                position: absolute;
+                top: 0; 
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+    .sidebyside {
+        max-width: 1322/20em;
+        flex-direction: row;
+
+        .left {
+            order: 1;
+            text-align: left;
+            margin-right: 75/20em;
+        }
+
+            .title {
+                text-align: left;
+
+                &:before {
+                    font-size: inherit;
+                    transform: none;
+                    left: 0;
+                }
+            }
+
+            p {
+                text-align: left;
+            }
+        
+
+        .right {
+            order: 2;
+        }
+    }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+
+}
+
+/*-- -------------------------- -->
+<---           About          -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #about {
+        padding-top: 162/20em;
+        padding-left: 10/20em;
+        padding-right: 10/20em;
+        padding-bottom: 75/20em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .left {
+            order: 2;
+            img {
+                display: none;
+            }
+        }
+
+        .right {
+            order: 1;
+            margin-bottom: 270/20em;
+        }
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+
+}
+
 /*-- -------------------------- -->
 <---           section          -->
 <--- -------------------------- -*/
@@ -404,6 +592,84 @@ main {
 @media only screen and (min-width: 1300px) {
 
 }
+
+/*-- -------------------------- -->
+<---           section          -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+
+}
+
+
+
+/*-- -------------------------- -->
+<---           section          -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+
+}
+
+
+
+/*-- -------------------------- -->
+<---           section          -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+
+}
+
+
 
 /*-- -------------------------- -->
 <---           section          -->
