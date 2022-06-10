@@ -409,10 +409,10 @@ main {
             img {
                 display: none;
             }
-            
+
             .title {
                 font-weight: 700;
-                font-size: ~"min(12vw, 2.4em)";
+                font-size: ~"min(9vw, 2.4em)";
                 line-height: 58/48em;
                 color: #1a1a1a;
                 position: relative;
@@ -429,8 +429,8 @@ main {
                     opacity: 1;
                     bottom: -25/64em;
                     left: 50%;
-                    transform: translatex(-50%);
-                    font-size: 1.6em;
+                    transform: translateX(-50%);
+                    font-size: 2.4em;
                 }
             }
     
@@ -473,6 +473,23 @@ main {
                 left: 352/20em;
             }
 
+            //sudo img
+            // &:after {
+            //     content: "";
+            //     position: absolute;
+            //     display: block;
+            //     height: 628/20em;
+            //     width: 796/20em;
+            //     background: url(../images/small-square.jpg);
+            //     background-size: contain;
+            //     background-position: center;
+            //     background-repeat: no-repeat;
+            //     opacity: 1;
+            //     top: 0;
+            //     left: 0;
+            // }
+            
+
             // Object Fit
             img { 
                 position: absolute;
@@ -489,35 +506,50 @@ main {
 
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
+
     .sidebyside {
-        max-width: 1322/20em;
         flex-direction: row;
 
         .left {
             order: 1;
-            text-align: left;
-            margin-right: 75/20em;
         }
-
-            .title {
-                text-align: left;
-
-                &:before {
-                    font-size: inherit;
-                    transform: none;
-                    left: 0;
-                }
-            }
-
-            p {
-                text-align: left;
-            }
-        
 
         .right {
             order: 2;
         }
     }
+
+
+    // .sidebyside {
+    //     max-width: 1322/20em;
+    //     flex-direction: row-reverse;
+
+    //     .left {
+    //         order: 1;
+    //         text-align: left;
+    //         padding-right: 75/20em;
+        
+
+    //         .title {
+    //             text-align: left;
+
+    //             &:before {
+    //                 font-size: inherit;
+    //                 transform: none;
+    //                 left: 0;
+    //             }
+    //         }
+
+    //         p {
+    //             text-align: left;
+    //         }
+    //     }
+
+    //     .right {
+    //         order: 2;
+    //         transform: translateY(124/20em);
+    //     }
+    // }
 }
 
 /* Large Desktop */
@@ -532,7 +564,7 @@ main {
 /* Mobile */
 @media only screen and (min-width: 0em) {
     #about {
-        padding-top: 162/20em;
+        padding-top: 100/20em;
         padding-left: 10/20em;
         padding-right: 10/20em;
         padding-bottom: 75/20em;
@@ -540,6 +572,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
         .left {
             order: 2;
             img {
@@ -549,19 +582,17 @@ main {
 
         .right {
             order: 1;
-            margin-bottom: 270/20em;
+            margin-bottom: 300/20em;
         }
     }
 }
 
-/* Tablet */
-@media only screen and (min-width: 48em) {
-
-}
 
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
-
+    #about {
+        padding-top: 188/20em;
+    }
 }
 
 /* Large Desktop */

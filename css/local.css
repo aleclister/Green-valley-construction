@@ -387,7 +387,7 @@ main {
   }
   .sidebyside .left .title {
     font-weight: 700;
-    font-size: min(12vw, 2.4em);
+    font-size: min(9vw, 2.4em);
     line-height: 1.20833333em;
     color: #1a1a1a;
     position: relative;
@@ -404,9 +404,9 @@ main {
     opacity: 1;
     bottom: -0.390625em;
     left: 50%;
-    -webkit-transform: translatex(-50%);
-            transform: translatex(-50%);
-    font-size: 1.6em;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 2.4em;
   }
   .sidebyside .left p {
     margin-bottom: 1.38888889em;
@@ -454,7 +454,6 @@ main {
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   .sidebyside {
-    max-width: 66.1em;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -464,20 +463,6 @@ main {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    text-align: left;
-    margin-right: 3.75em;
-  }
-  .sidebyside .title {
-    text-align: left;
-  }
-  .sidebyside .title:before {
-    font-size: inherit;
-    -webkit-transform: none;
-            transform: none;
-    left: 0;
-  }
-  .sidebyside p {
-    text-align: left;
   }
   .sidebyside .right {
     -webkit-box-ordinal-group: 3;
@@ -492,7 +477,7 @@ main {
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #about {
-    padding-top: 8.1em;
+    padding-top: 5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-bottom: 3.75em;
@@ -522,11 +507,15 @@ main {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-bottom: 13.5em;
+    margin-bottom: 15em;
   }
 }
-/* Tablet */
 /* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #about {
+    padding-top: 9.4em;
+  }
+}
 /* Large Desktop */
 /*-- -------------------------- -->
 <---           section          -->
