@@ -454,6 +454,7 @@ main {
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   .sidebyside {
+    max-width: 66.1em;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -463,14 +464,46 @@ main {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    text-align: left;
+    padding-right: 3.75em;
+  }
+  .sidebyside .left .title {
+    text-align: left;
+  }
+  .sidebyside .left .title:before {
+    font-size: inherit;
+    -webkit-transform: none;
+            transform: none;
+    left: 0;
+  }
+  .sidebyside .left p {
+    text-align: left;
   }
   .sidebyside .right {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    -webkit-transform: translateY(6.2em);
+            transform: translateY(6.2em);
   }
 }
 /* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  .sidebyside {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .sidebyside .left {
+    padding: 0;
+  }
+  .sidebyside .right {
+    font-size: min(1.6vw, 0.8em);
+  }
+}
 /*-- -------------------------- -->
 <---           About          -->
 <--- -------------------------- -*/
@@ -484,10 +517,6 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -504,16 +533,13 @@ main {
     display: none;
   }
   #about .right {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
     margin-bottom: 15em;
   }
 }
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #about {
-    padding-top: 9.4em;
+    padding-top: 6em;
   }
 }
 /* Large Desktop */
