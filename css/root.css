@@ -81,6 +81,8 @@
   p {
     margin-bottom: 1em;
     font-size: 0.9em;
+    color: #000;
+    opacity: .7;
   }
   p,
   li {
