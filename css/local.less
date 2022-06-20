@@ -729,6 +729,7 @@ main {
         align-items: center;
         flex-wrap: wrap;
         margin: auto;
+        padding-top: 75/20em;
 
         .title {
             width: 100%;
@@ -740,6 +741,11 @@ main {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+
+            &:nth-of-type(2),
+            &:nth-of-type(4) {
+                transform: translateY(100/20em);
+            }
 
 
             &:nth-of-type(3) {
@@ -754,23 +760,42 @@ main {
     }
 }
 
-/* Small Desktop */
-@media only screen and (min-width: 64em) {
-
-}
 
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-
+    #extra-services {
+        padding-bottom: 388/20em;
+    }
 }
 
 /*-- -------------------------- -->
-<---           section          -->
+<---           Steps          -->
 <--- -------------------------- -*/
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
+    #how-it-works {
+        padding-top: 100/20em;
+        padding-left: 10/20em;
+        padding-right: 10/20em;
+        padding-bottom: 75/20em;
+        display: flex;
+        // flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .left {
+            order: 2;
+            img {
+                display: none;
+            }
+        }
 
+        .right {
+            // order: 1;
+            margin-bottom: 300/20em;
+        }
+    }
 }
 
 /* Tablet */
@@ -780,7 +805,9 @@ main {
 
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
-
+    #how-it-works {
+        padding-top: 120/20em;
+    }
 }
 
 /* Large Desktop */
