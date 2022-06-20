@@ -172,7 +172,7 @@ main {
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #services {
+  .services {
     border-radius: 0.25em;
     margin: auto;
     margin-top: -10em;
@@ -186,17 +186,17 @@ main {
     -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
             box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
   }
-  #services .card {
+  .services .card {
     display: block;
     width: 100%;
     max-width: 17.85em;
     margin: auto;
     margin-bottom: 2.5em;
   }
-  #services .card:last-of-type {
+  .services .card:last-of-type {
     margin-bottom: 0;
   }
-  #services .card picture {
+  .services .card picture {
     background: var(--primary);
     width: 6em;
     height: 6em;
@@ -213,7 +213,7 @@ main {
     margin-bottom: 1.15em;
     border-radius: 50%;
   }
-  #services .card h2 {
+  .services .card h2 {
     text-align: center;
     font-size: 1em;
     line-height: 1.35em;
@@ -221,22 +221,22 @@ main {
     color: #666;
     margin-bottom: 0.65em;
   }
-  #services .card p {
+  .services .card p {
     text-align: center;
     color: #999999;
     font-size: 0.9em;
     line-height: 1.33333333em;
   }
-  #services .service {
+  .services .service {
     background: #0e817c;
     padding: 2.1em;
     width: 90%;
     margin: auto;
   }
-  #services .service:nth-of-type(2) {
+  .services .service:nth-of-type(2) {
     border-bottom: 0.05em solid rgba(73, 181, 176, 0.5);
   }
-  #services .service:nth-of-type(2) {
+  .services .service:nth-of-type(2) {
     background: #10625e;
     width: 100%;
     -webkit-box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
@@ -246,16 +246,16 @@ main {
             order: 1;
     margin-bottom: 0;
   }
-  #services .service:nth-of-type(2) .button-solid {
+  .services .service:nth-of-type(2) .button-solid {
     color: #10625e;
   }
-  #services .service:nth-of-type(2) .button-solid:before {
+  .services .service:nth-of-type(2) .button-solid:before {
     background: var(--primary);
   }
-  #services .service:nth-of-type(2) .button-solid:hover {
+  .services .service:nth-of-type(2) .button-solid:hover {
     color: #fff;
   }
-  #services .service h2 {
+  .services .service h2 {
     color: #fff;
     font-size: 1.2em;
     line-height: 1.16666667;
@@ -263,11 +263,11 @@ main {
     text-align: left;
     font-weight: 900;
   }
-  #services .service h2 span {
+  .services .service h2 span {
     display: block;
     color: #fff;
   }
-  #services .service p {
+  .services .service p {
     color: #fff;
     font-size: 0.9em;
     line-height: 1.5;
@@ -275,17 +275,17 @@ main {
     margin-bottom: 1.66666667em;
     opacity: 1;
   }
-  #services .service .button-solid {
+  .services .service .button-solid {
     background: #fff;
     color: #10625e;
   }
-  #services .service .button-solid:hover {
+  .services .service .button-solid:hover {
     color: #fff;
   }
 }
 /* Large Phone */
 @media only screen and (min-width: 600px) and (max-width: 666px) {
-  #services {
+  .services {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -296,34 +296,34 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
-  #services .service:nth-of-type(1) {
+  .services .service:nth-of-type(1) {
     border-right: 0.05em solid rgba(255, 255, 255, 0.05);
   }
-  #services .service:nth-of-type(1),
-  #services .service:nth-of-type(3) {
+  .services .service:nth-of-type(1),
+  .services .service:nth-of-type(3) {
     width: 50%;
     border-radius: 0;
   }
-  #services .service:nth-of-type(2) {
+  .services .service:nth-of-type(2) {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
   }
-  #services .service:nth-of-type(2) h2,
-  #services .service:nth-of-type(2) p {
+  .services .service:nth-of-type(2) h2,
+  .services .service:nth-of-type(2) p {
     text-align: center;
     max-width: 20em;
     margin-left: auto;
     margin-right: auto;
   }
-  #services .service:nth-of-type(2) .button-solid {
+  .services .service:nth-of-type(2) .button-solid {
     margin: auto;
     display: block;
   }
 }
 /* Inbetween */
 @media only screen and (min-width: 666px) {
-  #services {
+  .services {
     font-size: min(1.7vw, 1em);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -336,16 +336,16 @@ main {
             align-items: flex-start;
     width: 98%;
   }
-  #services .card {
+  .services .card {
     margin: 0;
   }
 }
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-  #services {
+  .services {
     padding: 2.5em 4em;
   }
-  #services .card {
+  .services .card {
     max-width: 17.85em;
   }
 }
@@ -487,20 +487,19 @@ main {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    text-align: left;
-    padding-right: 3.75em;
-  }
-  .sidebyside .left .title {
-    text-align: left;
-  }
-  .sidebyside .left .title:before {
-    font-size: inherit;
-    -webkit-transform: none;
-            transform: none;
-    left: 0;
+    padding-left: 1em;
+    padding-right: 1em;
   }
   .sidebyside .left p {
-    text-align: left;
+    text-align: center;
+  }
+  .sidebyside .left a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .sidebyside .right {
     -webkit-box-ordinal-group: 3;
@@ -519,9 +518,6 @@ main {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .sidebyside .left {
     padding: 0;
@@ -568,7 +564,6 @@ main {
     padding-top: 6em;
   }
 }
-/* Large Desktop */
 /*-- -------------------------- -->
 <---       Extra Services       -->
 <--- -------------------------- -*/
@@ -691,52 +686,79 @@ main {
     margin-top: auto;
   }
 }
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-  #extra-services {
-    padding-bottom: 19.4em;
-  }
-}
 /*-- -------------------------- -->
-<---           Steps          -->
+<---      How it Works          -->
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #how-it-works {
     padding-top: 5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    padding-bottom: 3.75em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  #how-it-works .left {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+  #how-it-works .right:before {
+    left: auto;
+    right: 17.6em;
   }
-  #how-it-works .left img {
-    display: none;
-  }
-  #how-it-works .right {
-    margin-bottom: 15em;
+  #how-it-works .right:after {
+    left: auto;
+    right: -5.45em;
   }
 }
 /* Tablet */
+@media only screen and (min-width: 48em) {
+  #how-it-works .title {
+    margin-top: 3.75em;
+  }
+  #how-it-works .sidebyside {
+    max-width: 66.1em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 3.75em;
+  }
+  #how-it-works .sidebyside .left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: left;
+    padding-right: 2.75em;
+  }
+  #how-it-works .sidebyside .left p {
+    text-align: center;
+  }
+  #how-it-works .sidebyside .left h3 {
+    text-align: center;
+  }
+  #how-it-works .sidebyside .right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
-  #how-it-works {
-    padding-top: 6em;
+  #how-it-works .sidebyside {
+    padding-top: 1.5em;
+  }
+  #how-it-works .sidebyside .left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  #how-it-works .sidebyside .right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 /* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #how-it-works {
+    padding-top: 2.75em;
+  }
+}
 /*-- -------------------------- -->
 <---           section          -->
 <--- -------------------------- -*/

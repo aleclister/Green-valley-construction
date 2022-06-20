@@ -197,7 +197,7 @@ main {
 /* Mobile */
 @media only screen and (min-width: 0em) {
 
-    #services {
+    .services {
         border-radius: 5/20em;
         margin: auto;
         margin-top: -200/20em;
@@ -319,7 +319,7 @@ main {
 /* Large Phone */
 @media only screen and (min-width: 600px) and (max-width: 666px) {
 
-    #services {
+    .services {
         flex-direction: row;
         flex-wrap: wrap;
         width: 90%;
@@ -356,7 +356,7 @@ main {
 /* Inbetween */
 @media only screen and (min-width: 666px) {
 
-    #services {
+    .services {
         font-size: ~"min(1.7vw, 1em)";
         display: flex;
         justify-content: space-between;
@@ -373,7 +373,7 @@ main {
 
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-    #services {
+    .services {
         padding: 50/20em 80/20em;
         .card {
             max-width: 357/20em;
@@ -538,24 +538,20 @@ main {
 
         .left {
             order: 1;
-            text-align: left;
-            padding-right: 75/20em;
-        
-
-            .title {
-                text-align: left;
-               
-
-                &:before {
-                    font-size: inherit;
-                    transform: none;
-                    left: 0;
-                }
-            }
+            padding-left: 20/20em;
+            padding-right: 20/20em;
+            
+           
 
             p {
-                text-align: left;
+                text-align: center;
             }
+
+            a {
+                justify-content: center;
+                align-items: center;
+            }
+
         }
 
         .right {
@@ -565,8 +561,6 @@ main {
     }
 
     .title {
-       
-
         &:before {
             font-size: inherit;
         }
@@ -577,7 +571,6 @@ main {
 @media only screen and (min-width: 1300px) {
     .sidebyside {
         justify-content: space-between;
-       align-items: flex-start;
         .left {
             padding:0
         }
@@ -604,7 +597,8 @@ main {
         // flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
+    
         .left {
             order: 2;
             img {
@@ -627,10 +621,6 @@ main {
     }
 }
 
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-
-}
 
 /*-- -------------------------- -->
 <---       Extra Services       -->
@@ -761,58 +751,91 @@ main {
 }
 
 
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-    #extra-services {
-        padding-bottom: 388/20em;
-    }
-}
-
 /*-- -------------------------- -->
-<---           Steps          -->
+<---      How it Works          -->
 <--- -------------------------- -*/
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
     #how-it-works {
         padding-top: 100/20em;
-        padding-left: 10/20em;
-        padding-right: 10/20em;
-        padding-bottom: 75/20em;
-        display: flex;
-        // flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        .left {
-            order: 2;
-            img {
-                display: none;
-            }
-        }
+        // padding-left: 10/20em;
+        // padding-right: 10/20em;
+        // padding-bottom: 75/20em;
+        // display: flex;
+        // // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
 
         .right {
-            // order: 1;
-            margin-bottom: 300/20em;
+            &:before {
+                left: auto;
+                right: 352/20em;
+            }
+            &:after {
+                left: auto;
+                right: -109/20em;
+            }
+
         }
     }
 }
 
 /* Tablet */
 @media only screen and (min-width: 48em) {
+    #how-it-works { 
+        .title {
+            margin-top: 75/20em;
+        } 
 
+        .sidebyside {
+            max-width: 1322/20em;
+            flex-direction: row;
+            padding-top: 75/20em;
+    
+            .left {
+                order: 2;
+                text-align: left;
+                padding-right: 55/20em;
+                p {
+                    text-align: center;
+                }
+
+                h3 {
+                    text-align: center;
+                } 
+            }
+    
+            .right {
+                order: 1;
+            }
+        }  
+    }   
 }
 
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
     #how-it-works {
-        padding-top: 120/20em;
+        .sidebyside {
+            padding-top: 30/20em;
+            .left {
+                order: 2;
+                padding-right: 20/20em;
+                padding-left: 20/20em;
+            }
+
+            .right {
+                order: 1;
+            }
+        }
     }
 }
 
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-
+    #how-it-works {
+        padding-top: 55/20em;
+    }
 }
 
 
